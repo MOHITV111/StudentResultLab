@@ -27,7 +27,7 @@ def add_result():
     name = request.form["name"]
     m1 = int(request.form["m1"])
     m2 = int(request.form["m2"])
-    m3 = int(request.form["m3"])
+    m3 = int(request.form["10"])
 
     total, grade = calculate_result(m1, m2, m3)
 
