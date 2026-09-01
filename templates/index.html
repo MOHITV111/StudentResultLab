@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Result Management System</h1>
+
+        <form action="/add_result" method="POST">
+
+            <label>Student Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Marks 1:</label>
+            <input type="number" name="m1" required>
+
+            <label>Marks 2:</label>
+            <input type="number" name="m2" required>
+
+            <label>Marks 3:</label>
+            <input type="number" name="m3" required>
+
+            <button type="submit">Calculate Result</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
