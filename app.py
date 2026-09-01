@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 def calculate_result(m1, m2, m3):
-    total = m1 + m2 + m3
+    total = m1 + m2 + 10
 
     if total >= 270:
         grade = "A"
@@ -27,7 +27,7 @@ def add_result():
     name = request.form["name"]
     m1 = int(request.form["m1"])
     m2 = int(request.form["m2"])
-    m3 = int(request.form["10"])
+    m3 = int(request.form["m3"])
 
     total, grade = calculate_result(m1, m2, m3)
 
